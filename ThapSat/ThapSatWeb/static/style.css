@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root{
-    --color-1: #673ab7;
+    --color-1: #24262b;
   }
   body{
       line-height: 1.5;
@@ -61,7 +61,7 @@
   }
   .header .nav ul li a:hover,
   .header .nav ul li a.active{
-      color: #ffffff;
+      color: #e91e63;
   }
   .header #nav-check{
       position: absolute;
@@ -102,6 +102,7 @@
       top: 6px;
   }
 img{
+    margin-top: -150px;
     height: 2%;
     width: 100%;
 }
