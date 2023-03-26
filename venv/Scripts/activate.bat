@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=D:\Important\ThapSat\ThapSat\venv
+=======
+set VIRTUAL_ENV=D:\Projects\clone\ThapSat\venv
+>>>>>>> 7eb79e779460aa81866b77c9a16ea3b71a10d49f
 
 if not defined PROMPT set PROMPT=$P$G
 
