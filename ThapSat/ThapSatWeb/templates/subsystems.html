@@ -12,16 +12,140 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <style>
+    .text1 {
+
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+margin: 20px auto;
+width: 850px;
+height: 250px;
+background: rgba(35, 31, 31, 0.196);
+border-radius: 75px;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+font-weight: lighter;
+letter-spacing: 2px;
+transition: 1s box-shadow;
+}
+
+.text1:hover {
+box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+} 
+p{
+  /* margin-left: 16px; */
+  /* margin: 0 ; */
+  text-align: center;
+}
+ .text1:hover::before, .text1:hover::after {
+display: block;
+content: '';
+position: absolute;
+width: 850px;
+height: 250px;
+background: #494747;
+border-radius: 75px;
+z-index: -1;
+animation: 1s clockwise infinite;
+}
+
+ .text1:hover:after {
+background: #b4b3b3;
+animation: 2s counterclockwise infinite;
+}
+
+
+ @keyframes clockwise  {
+0% {
+  top: -5px;
+  left: 0;
+}
+12% {
+  top: -2px;
+  left: 2px;
+}
+25% {
+  top: 0;
+  left: 5px;    
+}
+37% {
+  top: 2px;
+  left: 2px;
+}
+50% {
+  top: 5px;
+  left: 0;    
+}
+62% {
+  top: 2px;
+  left: -2px;
+}
+75% {
+  top: 0;
+  left: -5px;
+}
+87% {
+  top: -2px;
+  left: -2px;
+}
+100% {
+  top: -5px;
+  left: 0;    
+}
+}
+
+
+@keyframes counterclockwise {
+0% {
+  top: -5px;
+  right: 0;
+}
+12% {
+  top: -2px;
+  right: 2px;
+}
+25% {
+  top: 0;
+  right: 5px;    
+}
+37% {
+  top: 2px;
+  right: 2px;
+}
+50% {
+  top: 5px;
+  right: 0;    
+}
+62% {
+  top: 2px;
+  right: -2px;
+}
+75% {
+  top: 0;
+  right: -5px;
+}
+87% {
+  top: -2px;
+  right: -2px;
+}
+100% {
+  top: -5px;
+  right: 0;    
+}
+}
+
+
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root{
     --color-1: #24262b;
-  }
+  } 
   body{
       line-height: 1.5;
       font-family: sans-serif;
       background-color: #c6cde0;
-  }
-  *{
+  } 
+   *{
       box-sizing: border-box;
       margin:0;
       padding:0;
@@ -176,8 +300,8 @@ img{
 body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
-}
-*{
+} 
+ *{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
@@ -292,9 +416,25 @@ ul{
 			</div>
 		</div>
 	 </header>
-	 <div class="hello">
-	 <img src="https://imageshack.com/i/poyKU9MWj" alt="">
-	</div>
+	 <section>
+    <div class="text1">
+        <p>
+        The Ground station system will communicate with the satellite by means of
+Tele Command (TC), Telemetry(TM) and Payload data.It will receive the TM data over the UHF band by using another crossed Yagi antenna
+and it will down-convert, demodulate, decode and send the data to MCC via
+Ethernet.It will receive the payload data over the S-Band by using parabolic dish antenna.
+        </p>
+    </div>
+    <div class="text1">
+        <p>
+        The Ground Segment will be used to control and monitor various parameters of the
+THAPSAT before and after launch. Ground System tracks the satellite and displays the
+various parameters on the console to monitor the health of the satellite. It displays the
+payload data to analyze further. It controls the antenna to keep in line with the satellite for
+better communication.
+        </p>
+    </div>
+  </section>
   <footer class="footer">
   	 <div class="container">
   	 	<div class="row">
