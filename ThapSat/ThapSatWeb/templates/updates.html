@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'style.css' %}">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -51,6 +52,7 @@
       background-color: var(--color-1);
       padding:12px 0;
       position: relative;
+      margin-top: -23px;
   }
   .header .logo,
   .header .nav{
@@ -147,6 +149,7 @@ img{
           border-top: 1px solid rgba(255,255,255,0.2);
           opacity:0;
           visibility: hidden;
+          
       }
       .header .nav ul li{
           display: block;
@@ -172,6 +175,137 @@ img{
       }
   }
   
+
+  body{
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(https://imageshack.com/i/pnpodqKjj);
+}
+ul.team-list {
+    max-width: 1200px;
+    margin:20px  auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+ul.team-list> li {
+    width: 25%;
+    text-align: center;
+    min-width:230px ;
+    padding: 15px;
+    box-sizing:border-box;
+  
+}
+.team_box img {
+    height: 255px;
+    width: auto;
+    padding: 5px;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 2px;
+}
+.team_box {
+    width: 230px;   
+	overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+.team_box .mmbr-fttr .nm {
+    text-transform: uppercase;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    color: #01819e;
+    position: relative;
+    font-weight: 600;
+}
+.team_box label.prfl {
+    padding-bottom: 15px;
+    display: block;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    color: #cd1431;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.mmbr-fttr .nm:after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 1px;
+    background: #ffd88b;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mmbr-fttr .nm:before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #ffd88b;
+    bottom: -17px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: solid 3px #fff;
+    z-index: 1;
+}
+.team_box ul.social {
+    margin: 0;
+    list-style: none;
+    width: 30px;
+    position: absolute;z-index: 9;
+    opacity: 0;
+    right: 15px;transition: all .6s linear;
+    top: 5px;
+    background: #cd1431;    transform: translateY(-250px);
+    border-radius: 0 0 20px 20px;
+    padding: 10px 3px;
+}
+.team_box ul.social li {
+    width: 100%;
+    margin: 10px 0;
+}
+.team_box ul.social li a {
+    font-size: 18px;
+    transition: all .3s linear;
+    color: #fff;
+}
+.team_box ul.social li a:hover{color: rgba(255, 255, 255, .8)}
+
+.team_box .mmbr-fttr {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.mmbr-fttr:before {
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 256px;
+    left: 0;
+    transition: all .3s linear;
+    transform: translateY(256px);
+    bottom: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 0;
+}
+.team_box:hover .mmbr-fttr:before,.team_box:hover ul.social{
+    transform: translateY(0);
+    opacity: 1}
+h1,h2{
+	color: white;
+    margin-top: 60px;
+}
+.ob{
+	margin: 0%;
+}
+
   
 body{
 	line-height: 1.5;
@@ -196,6 +330,7 @@ ul{
 .footer{
 	background-color: #24262b;
     padding: 70px 0;
+    margin-bottom: -23px;
 }
 .footer-col{
    width: 25%;
@@ -295,6 +430,324 @@ ul{
 	 <div class="hello">
 	 <img src="https://imageshack.com/i/poyKU9MWj" alt="">
 	</div>
+
+    <h1><center>TEAM MEMBERS</center></h1>
+	<div class="ob">
+        <h2><center>Orbital and Perturbation Calculations</center></h2>
+	<ul class="team-list">
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pmMaALlBj">
+				<div class="mmbr-fttr">
+					<div class="nm">Pranava Seth</div>
+					<label class="prfl">Team Lead</label>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div>
+	<h2><center>Telemetry Tracking and Control</center></h2>
+    <ul class="team-list">
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
+				<div class="mmbr-fttr">
+					<div class="nm">Pradyun</div>
+					<label class="prfl">Team Lead</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/poVyG3Jxj">
+				<div class="mmbr-fttr">
+					<div class="nm">Tushaar</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/poJxzkPVj">
+				<div class="mmbr-fttr">
+					<div class="nm">Liza</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pn8QHvxXj">
+				<div class="mmbr-fttr">
+					<div class="nm">Eshan</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
+				<div class="mmbr-fttr">
+					<div class="nm">Smarth</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div>
+	<h2><center>Data downlinking and Monitoring</center></h2>
+		<ul class="team-list">
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
+				<div class="mmbr-fttr">
+					<div class="nm">Pradyun</div>
+					<label class="prfl">Team Lead</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pmW24DRVj">
+				<div class="mmbr-fttr">
+					<div class="nm">Pratham</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pm47RPc4j">
+				<div class="mmbr-fttr">
+					<div class="nm">Aadil</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pmueUEf7j">
+				<div class="mmbr-fttr">
+					<div class="nm">Raghav</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+	</ul></div>
+<div>
+	<h2><center>Payload Design and Calibration</center></h2>
+	<ul class="team-list">
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
+				<div class="mmbr-fttr">
+					<div class="nm">Twinkle</div>
+					<label class="prfl">Team Lead</label>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div>
+	<h2><center>Image Processing and Compression</center></h2>
+	<ul class="team-list">
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pmMaALlBj">
+				<div class="mmbr-fttr">
+					<div class="nm">Pranava Seth</div>
+					<label class="prfl">Team Lead</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
+				<div class="mmbr-fttr">
+					<div class="nm">Krishna</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
+				<div class="mmbr-fttr">
+					<div class="nm">Tamogh</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
+				<div class="mmbr-fttr">
+					<div class="nm">Twinkle</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div>
+	<h2><center>Alumni</center></h2>
+	<ul class="team-list">
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pnUgJpY0p">
+				<div class="mmbr-fttr">
+					<div class="nm">Shankho Baran Ghosh</div>
+					<label class="prfl">Alumni</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pmQFfzupp">
+				<div class="mmbr-fttr">
+					<div class="nm">Harsh Pallav</div>
+					<label class="prfl">Alumni</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pnblDCNEp">
+				<div class="mmbr-fttr">
+					<div class="nm">Ravindranath Prasad</div>
+					<label class="prfl">Alumni</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pmvUECDbp">
+				<div class="mmbr-fttr">
+					<div class="nm">Harsh Agrahari</div>
+					<label class="prfl">Alumni</label>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
   <footer class="footer">
   	 <div class="container">
   	 	<div class="row">
