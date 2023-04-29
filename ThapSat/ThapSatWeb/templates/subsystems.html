@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <style>
-    .text1 {
+    /* .text1 {
 
 display: flex;
 align-items: center;
@@ -32,13 +32,28 @@ transition: 1s box-shadow;
 
 .text1:hover {
 box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
-} 
-p{
-  /* margin-left: 16px; */
-  /* margin: 0 ; */
-  text-align: center;
+}  */
+p{  margin: 3% 5% ;
+    padding: 1rem;
+    border: .1rem solid grey;
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
 }
- .text1:hover::before, .text1:hover::after {
+.zoom {
+
+    background-color: transparent;
+    transition: transform .2s; /* Animation */
+
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background-color: white;
+    color: #000000;
+  }
+
+ /* .text1:hover::before, .text1:hover::after {
 display: block;
 content: '';
 position: absolute;
@@ -53,7 +68,7 @@ animation: 1s clockwise infinite;
  .text1:hover:after {
 background: #b4b3b3;
 animation: 2s counterclockwise infinite;
-}
+} */
 
 
  @keyframes clockwise  {
@@ -134,21 +149,18 @@ animation: 2s counterclockwise infinite;
   right: 0;    
 }
 }
-img {
-  /* margin: 15% 0%; */
-  /* margin: 6% 18% 6% 14% ; */
-  margin: auto   !important ;
-  height: 300px;
-  width: 300px;
-  /* display: block;
-  position: relative; */
+ #img1{
+  margin: 6% 1% ;
+  height: 86%;
+  width: 90%;
+  display: inline;
   --g: 4px;     /* the gap */
   --b: 12px;    /* border thickness*/
-  --c: #669706; /* the color */
+  --c: #484b40; /* the color */
   
   
   padding: calc(var(--g) + var(--b));
-  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_c: #0e0d0d00 0 25%, var(--c) 0 50%;
   --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
   --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
   background:
@@ -159,16 +171,49 @@ img {
   filter: grayscale(50%);
   transition: .3s;
 }
-img:hover {
+.row1{
+  /* margin: auto; */
+  /* align-items: center; */
+  justify-content: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+#img1:hover {
   --_p: 75%;
   filter: grayscale(0%);
 }
-
-#images body {
+#img2{
+  margin: 6% 4%  ;
+  height: 86%;
+  width: 90%;
+  display: inline;
+  --g: 4px;     /* the gap */
+  --b: 12px;    /* border thickness*/
+  --c: #484b40; /* the color */
+  
+  
+  padding: calc(var(--g) + var(--b));
+  --_c: #0e0d0d00 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background:
+    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b),var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(50%);
+  transition: .3s;
+}
+#img2:hover {
+  --_p: 75%;
+  filter: grayscale(0%);
+}
+#images .col div{
   
   margin: auto    !important ; 
   min-height: 100vh;
-  display: grid;
+  display: inline;
   align-items: center;
   /* justify-content: center; */
   place-content: center;
@@ -184,7 +229,7 @@ img:hover {
   body{
       line-height: 1.5;
       font-family: sans-serif;
-      background-color: #c6cde0;
+      background-color: black;
   } 
    *{
       box-sizing: border-box;
@@ -448,8 +493,9 @@ ul{
 				  <ul>
 					 <li><a href="/" >Home</a></li>
 					 <li><a href="departments">Departments</a></li>
-					 <li><a href="updates">Updates</a></li>
+					
 					 <li><a class="active" href="subsystems">Subsystems</a></li>
+           <li><a href="updates">Team</a></li>
 					 <li><a href="social">Contact</a></li>
 					 <!-- <li><a href="#">contact</a></li> -->
 				  </ul>
@@ -458,18 +504,30 @@ ul{
 		</div>
 	 </header>
    <div class="container text-center">
-    <div  class="row">
+    <div  class="row1">
       <div id="images" class="col">
-   <img src="ThapSat\ThapSatWeb\templates\Picture1.jpg">
+   <img id="img1" src="https://imagizer.imageshack.com/img923/9849/RzMzwF.jpg">
       </div>
       <div id="images" class="col">
-<img src="ThapSat\ThapSatWeb\templates\Picture2" style="--c: #945f31;">
+<img id="img2" src="https://imagizer.imageshack.com/img924/6074/b4x6hq.jpg" style="--c: #945f31;">
       </div>
 
     </div>
   </div>
-
-	 <section>
+  <p class="zoom">
+    The Ground station system will communicate with the satellite by means of
+Tele Command (TC), Telemetry(TM) and Payload data.It will receive the TM data over the UHF band by using another crossed Yagi antenna
+and it will down-convert, demodulate, decode and send the data to MCC via
+Ethernet.It will receive the payload data over the S-Band by using parabolic dish antenna.
+    </p>
+    <p class="zoom">
+      The Ground Segment will be used to control and monitor various parameters of the
+THAPSAT before and after launch. Ground System tracks the satellite and displays the
+various parameters on the console to monitor the health of the satellite. It displays the
+payload data to analyze further. It controls the antenna to keep in line with the satellite for
+better communication.
+      </p>
+	  <!-- <section>
     <div class="text1">
         <p>
         The Ground station system will communicate with the satellite by means of
@@ -487,7 +545,8 @@ payload data to analyze further. It controls the antenna to keep in line with th
 better communication.
         </p>
     </div>
-  </section>
+  </section>  -->
+  
   <footer class="footer">
   	 <div class="container">
   	 	<div class="row">
