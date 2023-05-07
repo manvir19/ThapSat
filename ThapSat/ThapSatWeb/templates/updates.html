@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Footer Design</title>
+  <title>ThapSat</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'style.css' %}">
@@ -131,9 +131,21 @@ img{
 
 
 }
-
-
-
+@media(min-width: 300px) and (max-width: 500px){
+	ul.team-list{
+		margin-left: 18% ;
+	}
+}
+@media(min-width: 700px) and (max-width: 800px){
+	ul.team-list{
+		margin-left: 18% ;
+	}
+}
+@media(min-width: 810px){
+	ul.team-list{
+		margin: auto ;
+	}
+}
 
 
   @media(max-width: 991px){
@@ -185,7 +197,7 @@ img{
 }
 ul.team-list {
     max-width: 1200px;
-    margin:20px  auto;
+    /* margin:20px  auto; */
     padding: 0;
     list-style: none;
     display: flex;
@@ -193,12 +205,12 @@ ul.team-list {
     
 }
 ul.team-list> li {
-    width: 25%;
+    /* width: 25%; */
     text-align: center;
     min-width:230px ;
     padding: 15px;
     box-sizing:border-box;
-  
+	
 }
 .team_box img {
     height: 255px;
@@ -402,45 +414,13 @@ ul{
 }
 
 
-.logo {
-   margin-top: 5%;
-    /* width: 100px; */
-    display: inline;
-    
-}
-
-@media(max-width:950px)
-{
-    .logo{
-        margin-top:10%;
-    }
-}
-
-
-@media(max-width:500px)
-{
-    .logo{
-        margin-top:13%;
-    }
-}
-
-
-@media(max-width:350px)
-{
-    .logo{
-        margin-top:18%;
-    }
-}
-
-
-
 </style>
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
 			   <div class="logo">
-				<img style="width: 120px" src="https://imagizer.imageshack.com/img922/804/fPc8qZ.png" >
+				 <a href="#">ThapSat</a>
 			   </div>
 			   <input type="checkbox" id="nav-check">
 			   <label for="nav-check" class="nav-toggler">
@@ -772,6 +752,87 @@ ul{
 				<div class="mmbr-fttr">
 					<div class="nm">Harsh Agrahari</div>
 					<label class="prfl">Alumni</label>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div>
+	<h2><center>Web Developers</center></h2>
+    <ul class="team-list">
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
+				<div class="mmbr-fttr">
+					<div class="nm">Chandan</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/poVyG3Jxj">
+				<div class="mmbr-fttr">
+					<div class="nm">Manvir</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/poJxzkPVj">
+				<div class="mmbr-fttr">
+					<div class="nm">Palak</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pn8QHvxXj">
+				<div class="mmbr-fttr">
+					<div class="nm">Kushagre</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
+				<div class="mmbr-fttr">
+					<div class="nm">Anjanii</div>
+					<label class="prfl">Member</label>
 				</div>
 			</div>
 		</li>
