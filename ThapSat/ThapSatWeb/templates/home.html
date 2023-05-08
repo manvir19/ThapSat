@@ -26,7 +26,7 @@
       margin:0;
       padding:0;
   }
-  p{  margin: 3% 15% ;
+  .zoom{  margin: 3% 15% ;
     padding: 1rem;
     border: .1rem solid grey;
     border-radius: 1rem;
@@ -488,6 +488,7 @@ ul{
     .img-slider .slide .info p{
         width: 70%;
         font-size: 15px;
+       
     }
     .img-slider .navigation{
         bottom: 25px;
@@ -513,6 +514,7 @@ ul{
     .img-slider .slide .info p{
         width: 80%;
         font-size: 13px;
+        margin-top:-135px;
     }
     .img-slider .navigation{
         bottom: 15px;
@@ -549,7 +551,14 @@ ul{
 }
 
 
-
+.text {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 
 
 
@@ -582,6 +591,7 @@ ul{
 	 </header>
 	 <div class="hello">
 	 <img src="https://imageshack.com/i/poyKU9MWj" alt="">
+     <div class="text">Welcome to ThapSat</div>
 	</div>
 
     <p class="zoom">
@@ -594,65 +604,25 @@ The NanoSat is planned to be placed in a Sun-Synchronous Polar Orbit and will be
     <div class="bodyc">
         <div class="img-slider">
             <div class="slide active">
-                <img class="kkkk"src="https://imagizer.imageshack.com/img924/4346/cu11Z2.jpg" alt="">
+                <img src="https://imagizer.imageshack.com/img923/1371/C7lCyI.jpg" style="opacity: 0.5" alt="">
                 <div class="info">
-                    <h2>slide 01</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos aliquam obcaecati velit provident iste veniam, facilis quae hic sunt doloremque illum similique, pariatur itaque numquam eaque, nihil omnis commodi repudiandae delectus. A repellendus alias labore dolores, doloremque, assumenda repudiandae adipisci, natus quia ullam fuga. Vel repellendus in provident libero obcaecati.</p>
+                    <!-- <h2>slide 01</h2> -->
+                    <p>The Main applications of the Satellite involve monitoring and visualizing Emission GreenHouse Gases, Estimation of Soil Moisture, and the Estimation of Sea Surface Temperatures. We will be mainly focussing on the Northern India Region. </p>
                 </div>
             </div>
-           
+            <div class="slide">
+                <img src="https://imagizer.imageshack.com/img922/7465/hyf9I1.jpg" style="opacity: 0.6" alt="">
+                <div class="info">
+                    <!-- <h2>slide 02</h2> -->
+                    <p>ThaparSat, is a multi-disciplinary project that started in January,2020. The team handles two facilities, the Satellite Development Lab and the Ground Station. We have  students from multiple areas of  work, mentored by the faculty heads for each department, working on developing the First NanoSatellite of the Centre.</p>
+                </div>
+            </div>
             <div class="navigation">
                 <div class="btn active "></div>
                 <div class="btn"></div>
             </div>
         </div>
     </div>
-
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <!-- <div class="footer-col">
-                    <h4>company</h4>
-                    <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">our services</a></li>
-                        <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">affiliate program</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">order status</a></li>
-                        <li><a href="#">payment options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>online shop</h4>
-                    <ul>
-                        <li><a href="#">watch</a></li>
-                        <li><a href="#">bag</a></li>
-                        <li><a href="#">shoes</a></li>
-                        <li><a href="#">dress</a></li>
-                    </ul>
-                </div> -->
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </footer>
-   
         <script type="text/javascript">
             var slides=document.querySelectorAll('.slide');
             var btns=document.querySelectorAll('.btn');
@@ -705,6 +675,51 @@ The NanoSat is planned to be placed in a Sun-Synchronous Polar Orbit and will be
         </script>
 
 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+   
+       
 
 
   
