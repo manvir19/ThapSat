@@ -47,7 +47,7 @@
   .justify-content-between{
       justify-content: space-between;
   }
-  /*header*/
+  /* /header/ */
   .header{
       background-color: var(--color-1);
       padding:12px 0;
@@ -131,11 +131,12 @@ img{
 
 
 }
-@media(min-width: 300px) and (max-width: 500px){
+@media(min-width: 300px) and (max-width: 520px){
 	ul.team-list{
 		margin-left: 18% ;
 	}
 }
+
 @media(min-width: 700px) and (max-width: 800px){
 	ul.team-list{
 		margin-left: 18% ;
@@ -196,13 +197,13 @@ img{
     background-image: url(https://imageshack.com/i/pnpodqKjj);
 }
 ul.team-list {
-    max-width: 1200px;
+    max-width: 1300px;
     /* margin:20px  auto; */
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap:wrap;
-    
+	;
 }
 ul.team-list> li {
     /* width: 25%; */
@@ -210,7 +211,6 @@ ul.team-list> li {
     min-width:230px ;
     padding: 15px;
     box-sizing:border-box;
-	
 }
 .team_box img {
     height: 255px;
@@ -400,7 +400,7 @@ ul{
 	background-color: #ffffff;
 }
 
-/*responsive*/
+/* /responsive/ */
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
@@ -414,46 +414,14 @@ ul{
 }
 
 
-
-.logo {
-   margin-top: 5%;
-    /* width: 100px; */
-    display: inline;
-    
-}
-
-@media(max-width:950px)
-{
-    .logo{
-        margin-top:10%;
-    }
-}
-
-
-@media(max-width:500px)
-{
-    .logo{
-        margin-top:13%;
-    }
-}
-
-
-@media(max-width:350px)
-{
-    .logo{
-        margin-top:18%;
-    }
-}
-
-
 </style>
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
-				<div class="logo">
-				<img style="width: 120px" src="https://imagizer.imageshack.com/img922/804/fPc8qZ.png" >
-			  </div>
+			   <div class="logo">
+				 <a href="#">ThapSat</a>
+			   </div>
 			   <input type="checkbox" id="nav-check">
 			   <label for="nav-check" class="nav-toggler">
 				  <span></span>
@@ -462,9 +430,10 @@ ul{
 				  <ul>
 					 <li><a href="/" >Home</a></li>
 					 <li><a href="departments">Departments</a></li>
-					 
 					 <li><a href="subsystems">Subsystems</a></li>
 					 <li><a class="active" href="updates">Team</a></li>
+					 <li><a href="publications">Publications</a></li>
+					 <li><a href="press">Press</a></li>
 					 <li><a href="social">Contact</a></li>
 					 <!-- <li><a href="#">contact</a></li> -->
 				  </ul>
@@ -474,6 +443,58 @@ ul{
 	 </header>
 
     <h1><center>TEAM MEMBERS</center></h1>
+
+	<div>
+		<h2><center>Faculty</center></h2>
+			<ul class="team-list">
+			<li>
+				<div class="team_box">
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+					<img src="https://imageshack.com/i/pmW24DRVj">
+					<div class="mmbr-fttr">
+						<div class="nm">Mamta Gulati</div>
+						<label class="prfl">Faculty</label>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="team_box">
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+					<img src="https://imageshack.com/i/pm47RPc4j">
+					<div class="mmbr-fttr">
+						<div class="nm">Vineet Srivastava</div>
+						<label class="prfl">Faculty</label>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="team_box">
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+					<img src="https://imageshack.com/i/pmueUEf7j">
+					<div class="mmbr-fttr">
+						<div class="nm">Prashant Singh Rana</div>
+						<label class="prfl">Faculty</label>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
 	<div class="ob">
         <h2><center>Orbital and Perturbation Calculations</center></h2>
 	<ul class="team-list">
@@ -485,10 +506,10 @@ ul{
 					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 				</ul>
-				<img src="https://imageshack.com/i/pmMaALlBj">
+				<img src="https://imageshack.com/i/pojaiVTJj">
 				<div class="mmbr-fttr">
 					<div class="nm">Pranava Seth</div>
-					<label class="prfl">Team Lead</label>
+					<label class="prfl">Member</label>
 				</div>
 			</div>
 		</li>
@@ -577,7 +598,7 @@ ul{
 <div>
 	<h2><center>Data downlinking and Monitoring</center></h2>
 		<ul class="team-list">
-		<li>
+		<!-- <li>
 			<div class="team_box">
 				<ul class="social">
 					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -591,7 +612,7 @@ ul{
 					<label class="prfl">Team Lead</label>
 				</div>
 			</div>
-		</li>
+		</li> -->
 		<li>
 			<div class="team_box">
 				<ul class="social">
@@ -652,7 +673,7 @@ ul{
 				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
 				<div class="mmbr-fttr">
 					<div class="nm">Twinkle</div>
-					<label class="prfl">Team Lead</label>
+					<label class="prfl">Member</label>
 				</div>
 			</div>
 		</li>
@@ -669,7 +690,7 @@ ul{
 					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 				</ul>
-				<img src="https://imageshack.com/i/pmMaALlBj">
+				<img src="https://imageshack.com/i/pojaiVTJj">
 				<div class="mmbr-fttr">
 					<div class="nm">Pranava Seth</div>
 					<label class="prfl">Team Lead</label>
@@ -717,6 +738,87 @@ ul{
 				<img src="https://source.unsplash.com/hh3ViD0r0Rc/229x255">
 				<div class="mmbr-fttr">
 					<div class="nm">Twinkle</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div>
+	<h2><center>Web Developers</center></h2>
+    <ul class="team-list">
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pmJs2PPIj">
+				<div class="mmbr-fttr">
+					<div class="nm">Chandan</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pnIAF4cCj">
+				<div class="mmbr-fttr">
+					<div class="nm">Manvir</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/poJxzkPVj">
+				<div class="mmbr-fttr">
+					<div class="nm">Palak</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/pmirK8J7j">
+				<div class="mmbr-fttr">
+					<div class="nm">Kushagre</div>
+					<label class="prfl">Member</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="team_box">
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+				<img src="https://imageshack.com/i/po4MZ9sHj">
+				<div class="mmbr-fttr">
+					<div class="nm">Anjanii</div>
 					<label class="prfl">Member</label>
 				</div>
 			</div>
@@ -816,7 +918,7 @@ ul{
 					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 				</ul>
-				<img src="https://imagizer.imageshack.com/img922/1070/28iLUI.jpg">
+				<img src="https://imageshack.com/i/poVyG3Jxj">
 				<div class="mmbr-fttr">
 					<div class="nm">Manvir Kaur</div>
 					<label class="prfl">Member</label>

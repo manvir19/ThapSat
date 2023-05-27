@@ -11,3 +11,7 @@ def subsystems(request):
     return render(request, 'subsystems.html' ,{})
 def social(request):
     return render(request, 'social.html' ,{})
+def publications(request):
+    return render(request, 'publications.html' ,{})
+def press(request):
+    return render(request, 'press.html' ,{})

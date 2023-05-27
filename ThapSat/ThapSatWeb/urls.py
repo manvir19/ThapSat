@@ -6,6 +6,10 @@ urlpatterns = [
     path( 'departments' , views.departments , name="departments" ),
     path( 'subsystems' , views.subsystems , name="subsystems" ),
     path( 'social' , views.social , name="social" ),
+    path( 'publications' , views.publications , name="publications" ),
+    path( 'press' , views.press , name="press" ),
+
+
 
 
 
