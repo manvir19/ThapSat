@@ -486,7 +486,20 @@ input:focus {
     width: 100% !important;
   }
 }
-
+.phone-only{
+    display:none !important;
+  }
+  .pc-only{
+    display: block !important;
+  }
+  @media only screen and (max-width: 1000px) {
+    .phone-only{
+      display:block !important;
+    }
+    .pc-only{
+      display: none !important;
+    }
+  }
 
 
 
