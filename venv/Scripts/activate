@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\smohi\Desktop\thprrrr\ThapSat\venv"
+VIRTUAL_ENV="C:\Users\smohi\Desktop\thaprsat\ThapSat\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
