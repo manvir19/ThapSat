@@ -15,7 +15,7 @@
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root{
-    --color-1: #24262b;
+    --color-1: #212529;
   }
   body{
       line-height: 1.5;
@@ -57,6 +57,7 @@
   .header .logo,
   .header .nav{
       padding:0 15px;
+	  z-index: 1;
   }
   .header .logo a{
       font-size: 30px;
@@ -118,7 +119,7 @@
       top: 6px;
   }
 img{
-    margin-top: -150px;
+    margin-top: -10px;
     height: 2%;
     width: 100%;
 }
@@ -203,7 +204,7 @@ ul.team-list {
     list-style: none;
     display: flex;
     flex-wrap:wrap;
-	;
+	z-index: -1;
 }
 ul.team-list> li {
     /* width: 25%; */
@@ -340,13 +341,13 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: #24262b;
+	background-color: #212529;
     padding: 70px 0;
     margin-bottom: -23px;
 }
 .footer-col{
-   width: 25%;
-   padding: 0 15px;
+   width: 33%;
+   padding: 0 15px 15px;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -399,6 +400,31 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
+.contact{
+    margin-left: 0%;
+}
+.follow{
+    margin-left: 25%;
+    
+}
+.app{
+    margin-left: 40%;
+    
+}
+
+@media(max-width: 575px){
+  .follow{
+    margin-left: 0%;
+}
+    .app{
+    margin-left: 0%;
+}
+}
+@media(max-width: 767px){
+    .app{
+    margin-left: 0%;
+}
+}
 
 /* /responsive/ */
 @media(max-width: 767px){
@@ -419,9 +445,9 @@ ul{
 	<header class="header">
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
-			   <div class="logo">
-				 <a href="#">ThapSat</a>
-			   </div>
+				<div class="logo">
+					<img style="width: 120px" src="https://imagizer.imageshack.com/img922/804/fPc8qZ.png" >
+				  </div>
 			   <input type="checkbox" id="nav-check">
 			   <label for="nav-check" class="nav-toggler">
 				  <span></span>
@@ -989,49 +1015,39 @@ ul{
 	</ul> -->
 </div>
 
-  <footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
-  	 			<h4>company</h4>
-  	 			<ul>
-  	 				<li><a href="#">about us</a></li>
-  	 				<li><a href="#">our services</a></li>
-  	 				<li><a href="#">privacy policy</a></li>
-  	 				<li><a href="#">affiliate program</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>get help</h4>
-  	 			<ul>
-  	 				<li><a href="#">FAQ</a></li>
-  	 				<li><a href="#">shipping</a></li>
-  	 				<li><a href="#">returns</a></li>
-  	 				<li><a href="#">order status</a></li>
-  	 				<li><a href="#">payment options</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>online shop</h4>
-  	 			<ul>
-  	 				<li><a href="#">watch</a></li>
-  	 				<li><a href="#">bag</a></li>
-  	 				<li><a href="#">shoes</a></li>
-  	 				<li><a href="#">dress</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>follow us</h4>
-  	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
-  	 			</div>
-  	 		</div>
-  	 	</div>
-  	 </div>
-  </footer>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+		<div class="footer-col">
+			<div class="contact">
+			<h4>Contact Us</h4>
+			<ul>
+				<li><a href="#">Email: abx@hmail.com</a></li>
+				<li><a href="#">Contact no.- xxxxx xxxxx</a></li>
+				
+			</ul>
+			</div>
+		</div>
+			<div class="footer-col">
+				<div class="follow">
+				<h4>follow us</h4>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+			</div>
+			<div class="footer-col">
+				<div class="app">
+				<h4>App</h4>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</footer>
 
 </body>
 </html>
