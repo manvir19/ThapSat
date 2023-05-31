@@ -10,11 +10,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'style.css' %}">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
 </head>
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root{
-    --color-1: #24262b;
+    --color-1: #212529;
   }
   body{
       line-height: 1.5;
@@ -78,6 +79,7 @@
   .header .logo,
   .header .nav{
       padding:0 15px;
+      z-index: 1;
   }
   .header .logo a{
       font-size: 30px;
@@ -146,11 +148,9 @@ img{
 }
 .hello{ 
     background-image: cover;
-    
-    
     overflow-x: hidden;
     overflow-y: hidden;
-
+    z-index: -1;
 }
 
 @media(max-width:1200px){
@@ -249,6 +249,7 @@ img{
 body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
+
 }
 *{
 	margin:0;
@@ -271,9 +272,9 @@ ul{
     padding: 70px 0;
 }
 .footer-col{
-    margin: auto;
-   width: 25%;
-   padding: 0 15px;
+    /* margin: auto; */
+   width: 33%;
+   padding: 0 15px 15px;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -326,6 +327,32 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
+.contact{
+    margin-left: 0%;
+}
+.follow{
+    margin-left: 25%;
+    
+}
+.app{
+    margin-left: 40%;
+    
+}
+
+@media(max-width: 575px){
+  .follow{
+    margin-left: 0%;
+}
+    .app{
+    margin-left: 0%;
+}
+}
+@media(max-width: 767px){
+    .app{
+    margin-left: 0%;
+}
+}
+
 
 
 @media(max-width: 767px){
@@ -352,7 +379,6 @@ ul{
     background-color: #121212;
     margin-top: -9px;
     z-index: 1;
-    
 
 }
 
@@ -567,15 +593,83 @@ margin-top: -85%;
 
 }
 
+@font-face{
+    font-family: 'myfont';
+    src: url(Game\ Of\ Squids.ttf) format('truetype');
+}
 
 .text {
   position: absolute;
   top: 40%;
   left: 30%;
   font-size: 3rem;
+  /* border: 1px solid #fff; */
   transform: translate(-50%, -50%);
   color: white;
+  
+  font-family: 'Bruno Ace SC', cursive;
+  
+  background-color: rgba(34, 34, 34, 0.5);
+  border-radius: 5px;
+  
+  padding: 10px;
+  
 }
+@media((min-width:768px) and (max-width:1024px )){
+    .text{
+        font-size: 2.5rem;
+    
+}
+}
+
+@media((min-width:560px) and (max-width:768px )){
+    .text{
+        font-size: 1.7rem;
+        top: 38%;
+        left: 28%;
+    
+}
+}
+@media((min-width:425px) and (max-width:559px )){
+    .text{
+    font-size: 1.2rem;
+    top: 28%;
+    left: 28%;
+        
+}
+}
+@media((min-width:375px) and (max-width:425px )){
+    .text{
+        font-size: 1rem;
+        top: 23%;
+        left: 27%;
+    
+}
+}
+@media((min-width:320px) and (max-width:375px )){
+    .text{
+    font-size: 0.5rem;
+    top: 21.5%;
+    left: 26%;
+}
+}
+@media((max-width:320px )){
+    .text{
+    font-size: 0.5rem;
+    top: 21.5%;
+    left: 26%;
+}
+}
+@media((max-width:280px  )){
+    .text{
+    font-size: 0.5rem;
+    top: 20.5%;
+    left: 26%;
+}
+}
+
+
+
 
 .hello img{
     opacity: 0.6;
@@ -611,7 +705,8 @@ margin-top: -85%;
 	 </header>
 	 <div class="hello">
 	 <img src="https://imageshack.com/i/poyKU9MWj"  alt="">
-     <!-- <div class="text">Thapar-Sat</div> -->
+     <div class="text"><span style= 'color:#e91e63' >THAPAR</span>-SAT</div>
+     
 	</div>
 
     <p class="zoom">
@@ -695,22 +790,39 @@ The NanoSat is planned to be placed in a Sun-Synchronous Polar Orbit and will be
         </script>
 
 
-    <footer class="footer">
-        <div class="container">
-            
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="footer-col">
+            <div class="contact">
+            <h4>Contact Us</h4>
+            <ul>
+                <li><a href="#">Email: abx@hmail.com</a></li>
+                <li><a href="#">Contact no.- xxxxx xxxxx</a></li>
                 
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+            </ul>
             </div>
         </div>
-   </footer>
+            <div class="footer-col">
+                <div class="follow">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            </div>
+            <div class="footer-col">
+                <div class="app">
+                <h4>App</h4>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
    
        
 

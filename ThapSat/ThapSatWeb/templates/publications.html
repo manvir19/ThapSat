@@ -20,12 +20,12 @@
 
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root{
-    --color-1: #24262b;
+    --color-1: #212529;
   } 
   body{
       line-height: 1.5;
       font-family: sans-serif;
-      background-color: rgb(255, 255, 255);
+      background-color: #212529;
   } 
    *{
       box-sizing: border-box;
@@ -200,12 +200,12 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: #24262b;
+	background-color: #212529;
     padding: 70px 0;
 }
 .footer-col{
-   width: 25%;
-   padding: 0 15px;
+   width: 33%;
+   padding: 0 15px 15px;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -257,6 +257,31 @@ ul{
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
+}
+.contact{
+    margin-left: 0%;
+}
+.follow{
+    margin-left: 25%;
+    
+}
+.app{
+    margin-left: 40%;
+    
+}
+
+@media(max-width: 575px){
+  .follow{
+    margin-left: 0%;
+}
+    .app{
+    margin-left: 0%;
+}
+}
+@media(max-width: 767px){
+    .app{
+    margin-left: 0%;
+}
 }
 
 
@@ -310,7 +335,7 @@ ul{
   margin-top: 185px;
   font-family: 'Montserrat', sans-serif;
   font-size: 4em;
-  color: #333;
+  color: #fbf9f9;
   -webkit-text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
   -moz-text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
@@ -322,8 +347,8 @@ ul{
   margin-bottom: 150px;
   font-size: 1.4em;
   font-weight: bold;
-  color: #222;
-  text-shadow: 0 0 40px #FFFFFF, 0 0 30px #FFFFFF, 0 0 20px #FFFFFF;
+  color: #fdfbfb;
+  /* text-shadow: 0 0 40px #FFFFFF, 0 0 30px #FFFFFF, 0 0 20px #FFFFFF; */
 }
 
 
@@ -360,9 +385,9 @@ ul{
     padding: 70px 0;
 }
 .footer-col{
-    margin: auto;
-   width: 25%;
-   padding: 0 15px;
+    /* margin: auto; */
+   width: 33%;
+   padding: 0 15px 15px;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -462,22 +487,39 @@ ul{
 			  <center><h1>COMING SOON</h1></center>
 			  <center><p class="hell">This page is under construction.</p></center>
 			
-	  <footer class="footer">
-        <div class="container">
-            
-                
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                    <div class="footer-col">
+                        <div class="contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href="#">Email: abx@hmail.com</a></li>
+                            <li><a href="#">Contact no.- xxxxx xxxxx</a></li>
+                            
+                        </ul>
+                        </div>
+                    </div>
+                        <div class="footer-col">
+                            <div class="follow">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="app">
+                            <h4>App</h4>
+                        </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
-            </div>
-        </div>
-   </footer>
+           </footer>
 
   
   <!-- <footer class="footer">
