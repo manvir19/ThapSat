@@ -438,7 +438,26 @@ ul{
     width: 100%;
 }
 }
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* background: #f1f1f1;  */
+    background: #121212; 
 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 </style>
 <body>
@@ -455,7 +474,6 @@ ul{
 			   <nav class="nav">
 				  <ul>
 					 <li><a href="/" >Home</a></li>
-					 <li><a href="departments">Departments</a></li>
 					 <li><a href="subsystems">Subsystems</a></li>
 					 <li><a class="active" href="updates">Team</a></li>
 					 <li><a href="publications">Publications</a></li>
